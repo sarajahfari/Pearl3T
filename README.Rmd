@@ -1,0 +1,8 @@
+---
+title: "README"
+output: html_document
+---
+
+## R Markdown
+
+This reporsitory contains processed data and code for the behavior and RF results in the Pearl3T project run by Sara Jahfari. For the FIR analysis reported please see: https://github.com/tknapen

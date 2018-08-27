@@ -1,0 +1,49 @@
+---
+title: "PLotRF"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+
+```{r}
+setwd("/Users/sarajahfari/Documents/Github/Pearl3T")
+load('./Data/RF_data/forestDat_N43.Rdat')
+forestDat.new=forestDat[(-which(names(forestDat)%in%out))]
+forestinall <- do.call("rbind", forestDat.new) # put all subjects into one list
+#summary(forestinall)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+library(ggplot2)
+library(plyr)
+library(scales)
+#library(zoo)
+library(reshape2)
+ROI=c("V1.contra.chosen","FFA.contra.chosen","preSMAsmall","maxSTN25exc","DLPFCposterior",
+           "Accumbens","Caudate40exc","Putamen40exc","VMPFC31thr","MotorBA4",'subject_id')
+FOR=forestinall[,colnames(forestinall)%in%ROI]
+colnames(FOR)=c('preSMA','STN','DLPFC','M1','Accumbens','Caudate','Putamen','vmPFC','FFA','V1','subject')
+rownames(FOR)=1:dim(FOR)[1]
+table(FOR$subject)->end
+Trial=c()
+for (e in end) Trial=c(Trial,1:e)
+TF=data.frame(FOR,Trial)
+ggTF=melt(TF,measure.vars=c('preSMA','STN','DLPFC','M1','Accumbens','Caudate','Putamen','vmPFC','FFA','V1'),value.name = 'ROI')
+
+ggplot(ggTF,aes(subject,Trial,fill=ROI))+geom_tile(colour = "white") + 
+  facet_grid(subject~ROI) + 
+  scale_fill_gradient(low="red", high="green")
+
+#plot(pressure)
+```
+

@@ -1,11 +1,11 @@
 ---
-title: Learning in visual regions as support for the bias in future value-driven choice
+title: \textbf{Learning in visual regions as support for the bias in future value-driven choice}
 author: |
-  | Sara Jahfari ^[Corresponding author: sara.jahfari@gmail.com] $^{1,2}$, Jan Theeuwes $^3$, Tomas Knapen $^{1,3}$
+  | \normalfont{Sara Jahfari} ^[Corresponding author: sara.jahfari@gmail.com] $^{1,2}$, \normalfont{Jan Theeuwes} $^3$, \normalfont{Tomas Knapen} $^{1,3}$
   |
-  | $^1$	Spinoza Centre for Neuroimaging, Royal Netherlands Academy of Arts and Sciences (KNAW), The Netherlands,  
-  | $^2$	Department of Psychology, University of Amsterdam, The Netherlands, 
-  | $^3$ Department of Experimental and Applied Psychology, Vrije Universiteit van Amsterdam, The Netherlands
+  | $^1$	\normalfont{Spinoza Centre for Neuroimaging, Royal Netherlands Academy of Arts and Sciences (KNAW), The Netherlands}  
+  | $^2$	\normalfont{Department of Psychology, University of Amsterdam, The Netherlands} 
+  | $^3$ \normalfont{Department of Experimental and Applied Psychology, Vrije Universiteit van Amsterdam, The Netherlands}
 
 abstract: |
   Learning biases decision-making towards higher expected outcomes. Cognitive theories describe this through the tracking of value and outcome evaluations within striatum and prefrontal cortex. Decisions, however, first require processing of sensory input and to-date far less is known about the learning perception interplay. This fMRI study (N=49), relates visual BOLD responses to value-beliefs during choice, and, signed prediction errors after outcomes. To understand these relationships, which co-occurred in striatum, we next evaluated relevance with the prediction of future value-based choices, using a separate transfer-phase with learning already established. We decoded choice outcomes with a 69% accuracy given unseen trials with a machine learning algorithm that combined trial-by-trial BOLD from prefrontal, striatal, and visual regions. Importantly, this classification of value-driven choice outcomes again showed an important role for visual activity. These results raise the intriguing possibility that value learning in visual cortex is supportive for the striatal bias towards valued options.\newline \newline \textbf{Keywords}: Reinforcement learning, perceptual learning, decoding, Bayesian hierarchical modelling,  random forest machine learning
@@ -177,8 +177,6 @@ The authors declare to have no competing interests.
 The code and preprocessed files for behavioral and decoding analyses can be download 
 from: https://github.com/sarajahfari/Pearl3T.git, and fMRI preprocessing and deconvolution
 analysis code are available at https://github.com/tknapen/pearl_3T. The raw data can be downloaded from openfMRI in BIDS after acceptance of this MS.
-
-
 
 
 \newpage

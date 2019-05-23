@@ -7,8 +7,8 @@ setwd("/Users/sarajahfari/Documents/Github/Pearl3T/RF/RF_forests/Forests_onetrai
 ev=list.files()[grep('_onetraintest',list.files())]
 
 # choose type of forest fit to evaluate
-Type='ALL' # N=43 all ppn
-#Type='good' # N=34, only sub who over all 3pairs had p_accuracy>0.65
+#Type='ALL' # N=43 all ppn
+Type='good' # N=34, only sub who over all 3pairs had p_accuracy>0.65
 
 TAUC=matrix(,ncol=3)
 Tname=data.frame()

@@ -16,6 +16,11 @@ Stan.Q=Pearl3T_beh43$Qpar[,c("QL-a","QL-c","QL-e")]-Pearl3T_beh43$Qpar[,c("QL-b"
 Qdiff=data.frame(name=c('Ab','Cd','Ef'), val=colMeans(Stan.Q))
 Qdiffsd=apply(Stan.Q,2,sd)/sqrt(length(Stan.Q[,1])) 
 
+
+Q_all=Pearl3T_beh43$Qpar[,c("QL-a","QL-c","QL-e","QL-f","QL-d","QL-b")]
+Q_ALL=data.frame(name=LETTERS[1:6], val=colMeans(Q_all))
+Qallsd=apply(Q_all,2,sd)/sqrt(length(Q_all[,1])) 
+
 #2) now oragnize simulated and observed data
 
 SIM_plot=function(obs.vs.sim)
